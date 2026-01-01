@@ -1,4 +1,4 @@
-## Day 1 – Requirement Analysis & Scope Definition
+### Day 1 – Requirement Analysis & Scope Definition
 Project: E-commerce Website – Shopping Cart Testing
 Domain: Web Application Testing (Manual + Automation Ready)
 
@@ -93,3 +93,39 @@ This test plan describes the testing approach, scope, resources, and schedule fo
 - Bug reports
 - Test summary report
 
+
+### Day 3 – Test Scenarios
+## Test Scenarios for Shopping Cart Module
+### Add to Cart
+1. Verify user can add a product to the cart from product listing page
+2. Verify user can add a product to the cart from product detail page
+3. Verify cart icon updates item count after adding product
+
+### Update Quantity
+4. Verify user can increase product quantity in cart
+5. Verify user can decrease product quantity in cart
+6. Verify total price updates when quantity is changed
+7. Verify user cannot set quantity to zero
+8. Verify user cannot set quantity to negative value
+
+### Remove from Cart
+9. Verify user can remove a product from the cart
+10. Verify cart is empty after removing all products
+
+### Price Validation
+11. Verify total price calculation is correct
+12. Verify price updates correctly after removing a product
+13. Verify tax/discount is applied correctly (if applicable)
+
+### Stock Validation
+14. Verify user cannot add quantity more than available stock
+15. Verify appropriate error message is displayed for stock limit
+
+### Navigation
+16. Verify user can proceed to checkout from cart
+17. Verify cart retains items when navigating back from checkout
+
+### Negative Scenarios
+18. Verify cart behavior when internet connection is lost
+19. Verify cart behavior on page refresh
+20. Verify cart handles unexpected input gracefully
