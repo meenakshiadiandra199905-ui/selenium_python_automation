@@ -37,7 +37,6 @@ The purpose of this project is to test the Shopping Cart module of an e-commerce
 - Prices update correctly.
 - User can proceed to checkout.
 
-
 ### Day 2 – Test Plan
 ## Test Plan Overview
 This test plan describes the testing approach, scope, resources, and schedule for validating the Shopping Cart module of an e-commerce application.
