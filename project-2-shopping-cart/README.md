@@ -129,3 +129,19 @@ This test plan describes the testing approach, scope, resources, and schedule fo
 18. Verify cart behavior when internet connection is lost
 19. Verify cart behavior on page refresh
 20. Verify cart handles unexpected input gracefully
+
+### Day 4 – Detailed Test Cases
+## Test Cases for Shopping Cart Module
+| TC ID | Test Case Description | Preconditions | Test Steps | Expected Result | Priority |
+|------|----------------------|---------------|------------|-----------------|----------|
+| TC_01 | Add product to cart | User on product page | Click Add to Cart | Product added to cart | High |
+| TC_02 | Increase quantity | Product added to cart | Increase quantity | Quantity increases | High |
+| TC_03 | Decrease quantity | Quantity > 1 | Decrease quantity | Quantity decreases | Medium |
+| TC_04 | Remove product | Product in cart | Click Remove | Product removed | High |
+| TC_05 | Update total price | Multiple items in cart | Update quantity | Total price updates | High |
+| TC_06 | Prevent zero quantity | Product in cart | Set quantity to 0 | Error shown | High |
+| TC_07 | Prevent negative quantity | Product in cart | Set quantity to -1 | Error shown | High |
+| TC_08 | Stock limit validation | Limited stock product | Increase quantity beyond stock | Error displayed | High |
+| TC_09 | Cart persistence | Items in cart | Refresh page | Cart retains items | Medium |
+| TC_10 | Proceed to checkout | Items in cart | Click Checkout | Navigates to checkout | High |
+
