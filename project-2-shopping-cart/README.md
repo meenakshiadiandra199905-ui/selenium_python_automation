@@ -145,3 +145,71 @@ This test plan describes the testing approach, scope, resources, and schedule fo
 | TC_09 | Cart persistence | Items in cart | Refresh page | Cart retains items | Medium |
 | TC_10 | Proceed to checkout | Items in cart | Click Checkout | Navigates to checkout | High |
 
+### Day 5 – Bug Report Writing
+## Bug Reports – Shopping Cart Module
+### Bug 1
+- Bug ID: BUG_01
+- Title: Cart total price not updating after quantity change
+- Module: Shopping Cart
+- Severity: High
+- Priority: High
+- Description: When user increases the product quantity, the total price remains unchanged.
+- Steps to Reproduce:
+  1. Add a product to cart
+  2. Increase quantity
+- Expected Result: Total price should update automatically
+- Actual Result: Total price does not update
+
+### Bug 2
+- Bug ID: BUG_02
+- Title: Negative quantity allowed in cart
+- Module: Shopping Cart
+- Severity: High
+- Priority: High
+- Description: System allows user to enter negative values in quantity field.
+- Steps to Reproduce:
+  1. Add product to cart
+  2. Enter -1 in quantity field
+- Expected Result: Error message should be shown
+- Actual Result: Quantity updates incorrectly
+
+### Bug 3
+- Bug ID: BUG_03
+- Title: Cart items removed after page refresh
+- Module: Shopping Cart
+- Severity: Medium
+- Priority: Medium
+- Description: Cart does not retain items after refreshing the page.
+- Steps to Reproduce:
+  1. Add items to cart
+  2. Refresh browser
+- Expected Result: Cart should retain items
+- Actual Result: Cart becomes empty
+
+### Bug 4
+- Bug ID: BUG_04
+- Title: Checkout button enabled for empty cart
+- Module: Shopping Cart
+- Severity: Medium
+- Priority: Medium
+- Description: Checkout button is enabled even when cart is empty.
+- Steps to Reproduce:
+  1. Open cart without items
+- Expected Result: Checkout button should be disabled
+- Actual Result: Checkout button is enabled
+
+### Bug 5
+- Bug ID: BUG_05
+- Title: No error message when stock limit exceeded
+- Module: Shopping Cart
+- Severity: High
+- Priority: High
+- Description: System does not show error when quantity exceeds available stock.
+- Steps to Reproduce:
+  1. Add limited stock product
+  2. Increase quantity beyond stock
+- Expected Result: Stock limit error message
+- Actual Result: Quantity increases without warning
+
+
+
