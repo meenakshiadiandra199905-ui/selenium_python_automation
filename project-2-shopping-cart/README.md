@@ -210,5 +210,43 @@ This test plan describes the testing approach, scope, resources, and schedule fo
 - Expected Result: Stock limit error message
 - Actual Result: Quantity increases without warning
 
+### Day 6 – Test Summary Report
+## Test Summary – Shopping Cart Module
+### Overview
+This document summarizes the testing activities performed on the Shopping Cart module of the e-commerce application. Testing focused on validating functional behavior, handling of negative scenarios, and identifying defects related to cart operations.
 
+### Test Scope
+- Add to cart functionality
+- Update and remove cart items
+- Price and quantity calculation
+- Stock validation
+- Navigation to checkout
 
+### Test Execution Summary
+- Total Test Scenarios: 20
+- Total Test Cases: 10
+- Test Cases Executed: 10
+- Test Cases Passed: 7
+- Test Cases Failed: 3
+- Test Cases Blocked: 0
+
+### Defect Summary
+- Total Defects Logged: 5
+- High Severity Defects: 3
+- Medium Severity Defects: 2
+- Low Severity Defects: 0
+
+### Major Defects
+- Cart total price not updating after quantity change
+- Negative quantity accepted in cart
+- No stock limit validation error displayed
+
+### Testing Challenges
+- Dynamic UI updates delayed during quantity changes
+- Limited access to real production-like data
+
+### Overall Quality Assessment
+The Shopping Cart module has critical functional issues related to price calculation and quantity validation. These defects must be resolved before the module can be considered stable for production release.
+
+### Recommendation
+It is recommended to fix all high-severity defects and perform regression testing before deployment.
