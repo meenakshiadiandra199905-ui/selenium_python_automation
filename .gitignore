@@ -1,0 +1,3 @@
+automation/venv/
+__pycache__/
+*.pyc
