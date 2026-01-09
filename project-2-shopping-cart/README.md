@@ -250,3 +250,32 @@ The Shopping Cart module has critical functional issues related to price calcula
 
 ### Recommendation
 It is recommended to fix all high-severity defects and perform regression testing before deployment.
+
+### Day 7 – Conclusion, Learnings & Next Steps
+## Project Conclusion
+The Shopping Cart Testing project provided hands-on experience in understanding requirements, creating test plans, writing test scenarios, designing test cases, executing tests, logging defects, and preparing a test summary report. This project simulates real-world manual testing activities followed in the software testing lifecycle.
+
+## Key Learnings
+- Understood end-to-end testing process for an e-commerce module
+- Gained experience in writing professional test documentation
+- Improved ability to identify functional and negative test scenarios
+- Learned how to log defects with clear reproduction steps
+- Understood the importance of test summary and quality assessment
+
+## Challenges Faced
+- Understanding dynamic cart behavior
+- Identifying edge and negative cases
+- Managing documentation in GitHub
+
+## How This Project Helps My Career
+- Demonstrates manual testing skills with real examples
+- Shows understanding of SDLC and STLC
+- Acts as a portfolio project for entry-level QA roles
+- Improves confidence for interviews
+
+## Next Steps
+- Automate key shopping cart test cases using Selenium with Python
+- Add automation scripts and execution reports
+- Expand project with API testing
+- Continue practicing testing concepts and tools
+
