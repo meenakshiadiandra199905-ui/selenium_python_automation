@@ -92,3 +92,26 @@ Untracked files:
 
 
 Updated README with setup instructions and author details
+
+----
+
+## 🧪 Automation Day B – Add Product to Cart (Real Website)
+**Website Used:** https://www.saucedemo.com
+
+### Scenario Automated
+- Launch Chrome browser
+- Login using valid credentials
+- Add a product to cart
+- Navigate to cart page
+- Verify product is added successfully
+
+### Test File
+### Key Concepts Used
+- Selenium WebDriver with Python
+- WebDriver Manager for browser setup
+- Locators (ID, Class Name)
+- Basic assertions for validation
+
+### Result
+✅ Product successfully added to cart and verified
+
