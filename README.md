@@ -115,3 +115,13 @@ Updated README with setup instructions and author details
 ### Result
 ✅ Product successfully added to cart and verified
 
+
+## Day C – Explicit Waits & Test Stability
+
+- Converted the cart test to PyTest
+- Introduced **WebDriverWait** with **Expected Conditions** for all interactions
+- Added **assertions** to verify products are added to the cart
+- Implemented a **driver fixture** in `conftest.py` for reusable browser setup/teardown
+- Improved test reliability and stability, removing hard-coded delays
+
+
