@@ -1,24 +1,10 @@
 # Automation tests for Shopping Cart
 import pytest
-from selenium import webdriver 
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
+
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-from automation.pages.cart_page import CartPage
-
-@pytest.fixture
-def driver():
-    options = Options()
-    options.add_argument("--start-maximized")
-
-    service = Service()
-    driver = webdriver.Chrome(service=service, options=options)
-
-    yield driver
-    driver.quit()
 
 def test_add_product_to_cart(driver):
     driver.get("https://www.saucedemo.com/")
@@ -39,5 +25,5 @@ def test_add_product_to_cart(driver):
         EC.visibility_of_element_located((By.CLASS_NAME, "inventory_item_name"))
     )
 
-    assert cart_item.is_displayed()
+    assert cart_item.is_displayed(), "Product was not added to cart"
 
