@@ -19,8 +19,9 @@ class CartPage:
 
     def is_product_in_cart(self):
         return self.wait.until(
-            EC.visibility_of_all_element_located((By.CLASS_NAME, "inventory_item_name"))
-        ).is_displayed()
+            EC.visibility_of_all_elements_located((By.CLASS_NAME, "inventory_item_name"))
+        )
+        return len(items) > 0
             
         
         
